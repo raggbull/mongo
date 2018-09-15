@@ -92,7 +92,7 @@ app.get("/scrape", function(req, res) {
     var $ = cheerio.load(html);
     var count = 0;
     // Now, we grab every h2 within an article tag, and do the following:
-    $(".template-2 .story").each(function(i, element) {
+    $(".template-3 .story").each(function(i, element) {
       if (count === 20){
         return;
       } 
