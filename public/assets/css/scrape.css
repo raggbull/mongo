@@ -1,10 +1,10 @@
 body {
-    background-image: url("/assets/images/NewYorkNight.jpg");
+    background-image: url("/assets/images/city.jpg");
     padding-top: 70px;
 }
 
 .deleteNote {
-	display: inline-block;
+    display: inline-block;
 }
 
 .previousNotes {
@@ -16,14 +16,16 @@ body {
     margin: 8px 0px;
 }
 
-.svg{
+.svg {
     height: 50px;
     width: 50px;
 }
-.jumbotron{
+
+.jumbotron {
     background-color: rgb(198, 228, 243);
 }
 
-.jumbotron, h1{
+.jumbotron,
+h1 {
     color: black;
 }
