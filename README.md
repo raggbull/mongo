@@ -1,5 +1,5 @@
 # SCRAPE THE TIMES!
-https://scrape-the-nytimes.herokuapp.com/
+CLick the link:  https://scrape-the-nytimes.herokuapp.com/
 
 
 **Overview**
