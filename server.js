@@ -123,7 +123,7 @@ app.get("/scrape", function(req, res) {
       });
 
     });
-    console.log("Are you counting",count)
+    console.log("Are you counting",count);
         res.send("Scrape Complete");
 
   });
@@ -207,7 +207,7 @@ app.post("/notes/save/:id", function(req, res) {
     body: req.body.text,
     article: req.params.id
   });
-  console.log(req.body)
+  console.log(req.body);
   // And save the new note the db
   newNote.save(function(error, note) {
     // Log any errors
