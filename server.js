@@ -92,7 +92,7 @@ app.get("/scrape", function(req, res) {
     var $ = cheerio.load(html);
     var count = 0;
     // Now, we grab every h2 within an article tag, and do the following:
-    $("ol.story-menu li article.story").each(function(i, element) {
+    $(".template-2 .story").each(function(i, element) {
       if (count === 20){
         return;
       } 
@@ -100,9 +100,9 @@ app.get("/scrape", function(req, res) {
       var result = {};
 
       // Add the title and summary of every link, and save them as properties of the result object
-      result.title = $("h2.headline").text();
-      result.summary = $("p.summary").text();
-      result.link = $("a.story-link").attr("href");
+      result.title = $(this).find('h2 > a').text();
+      result.summary = $(this).find('p').text();
+      result.link = $(this).find('h2 > a').attr("href");
       // console.log("This is the result",result);
 
       count ++;
